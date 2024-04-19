@@ -1,0 +1,18 @@
+main {
+	text-align:left;
+    font-family:cursive;
+    color:black;
+}
+.img{
+    /* background-image:url("https://www.politico.eu/cdn-cgi/image/width=1160,height=772,fit=crop,quality=80,onerror=redirect,format=auto/wp-content/uploads/2019/03/GettyImages-458314418.jpg"); */
+    /* background-image:url("https://images7.alphacoders.com/109/1093980.jpg"); */
+    background-image:url("https://wallpaperaccess.com/full/1373278.jpg");
+    
+    /* background-image:url("https://wallpaperaccess.com/full/1373287.jpg"); */
+    background-position:center;
+    background-size:100% ;
+    
+    height: 100vh;
+    width: 100%;
+    margin:auto;
+}

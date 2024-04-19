@@ -1,0 +1,104 @@
+
+<app-headers></app-headers>
+
+<div class="tracks">
+  
+  <!-- <h1>Tracks</h1> -->
+<div class="grid-container" *ngIf="data" >
+  
+  <!-- <div class="tracks">
+   <h1>Tracks</h1> -->
+   <div class="tracks-container">
+    <!-- <div class="example-button-row"> -->
+
+     <div *ngFor="let track of data" (click)="addTrack(track)" class="track">
+    
+     <img class="image"  src="..\assets\logo.avif">
+     <!-- <img class="image"  src="..\assets\music.avif"> -->
+      <p>Track Name: {{ track.name }}</p>
+      <button disabled="{{track.isAdded}}" class="registerbtn">{{track.isAdded==true?'Added to Wishlist!':'Add to Wishlist'}} </button>
+      <!-- <fa-icon [icon]="icon"  disabled="{{track.isAdded}}" class="registerbtn">{{track.isAdded==true?'Added to Wishlist!':'Add to Wishlist'}} </fa-icon> -->
+
+    </div>
+  </div>
+  </div>
+  </div>
+  <app-footers></app-footers>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <!-- <div class="wrap">
+   <div class="search">
+      <input type="text" class="searchTerm" placeholder="Search your favorite music here">
+      <button type="submit" (click)="onSearch()" class="searchButton" >search 
+     </button>
+   </div>
+</div> -->
+  
+      <!-- <fa-icon [icon]="icon"></fa-icon> -->
+      <!-- <fa-icon [icon]="icon"  disabled="{{track.isAdded}}" class="registerbtn">{{track.isAdded==true?'Added to Wishlist!':'Add to Wishlist'}} </fa-icon> -->
+
+      <!-- <h4>Artists</h4> -->
+      
+      <!-- <ul>
+        <li *ngFor="let artist of track.artists">
+         <a href="{{ artist.href }}" target="_blank">{{ artist.name }}</a>
+      </li>
+    </ul> -->
+    <!-- <button disabled="{{track.isAdded}}" class="registerbtn">{{track.isAdded==true?'Added to Wishlist!':'Add to Wishlist'}} </button> -->
+    <!-- <button   disabled="{{track.isAdded}}" class="registerbtn">{{track.isAdded==true?}}  mat-icon-button matTooltip="Accent" color="accent" aria-label="Example icon-button with a heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button> -->
+    <!-- <div matTooltip="Disabled" class="example-disabled">
+      <button mat-icon-button disabled aria-label="Example icon-button with a heart icon">
+        <mat-icon>favorite</mat-icon>
+      </button>
+    </div> -->
+    
+  <!-- </div> -->
+<!-- </div>
+</div>
+</div>
+</div>
+<app-footers></app-footers> -->
+
+ <!---- <p>Track ID: {{ track.id }}</p>-->
+ <!-- <h2>Album Details</h2> -->
+   <!-- <div class="album-details">
+    
+     <p>Label: {{ data.label }}</p>
+   </div>
+   <div class="artists">
+      <h3>Artists</h3>
+      <ul>
+        <li *ngFor="let artist of data.artists">
+         <a href="{{ artist.href }}" target="_blank">{{ artist.name }}</a>
+      </li>
+    </ul>
+  </div> -->

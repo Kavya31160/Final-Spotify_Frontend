@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html>
+ 
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">s
+</head>
+ <app-headers></app-headers>
+<body>
+  <!-- <nav class="navbar navbar-dark bg-dark">
+    <span class="navbar-text">
+           Spotify App
+      </span>
+  </nav> -->
+ 
+  <form class= "myform" [formGroup]="UserForm" >
+    <div class="container">
+      <h1
+      style="color:black;font-weight:bold;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+      Spotify Music App</h1>
+    <h2 style="color:black;font-weight: bold;">Registration</h2>
+      <!-- <h1 style="color:black;font-weight:bold;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Spotify Music App</h1>
+      <h5 style="color:floralwhite;font-weight: bold;">Registration</h5>
+      -->
+     
+      <h3>Please fill the essentials</h3>
+      <!----ngModel binds the data-->
+ 
+      <label for="firstName"><b> FirstName : </b></label>&nbsp;&nbsp;&nbsp;
+      <input type="text" placeholder="Enter Your firstName" name="firstname" id="firstname"
+      formControlName="firstname">
+      <div class="error-message" *ngIf="UserForm.get('firstname')?.hasError('required') && UserForm.get('firstname')?.touched">
+        First Name is required.
+      </div>
+      <div class="error-message" *ngIf="UserForm.get('firstname')?.hasError('pattern') && UserForm.get('firstname')?.touched">
+        First Name should contain only letters.
+      </div>
+      <br>
+      <label for="lastname"><b> Lastname : </b> </label>&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="text" placeholder="Enter Your lastname" name="lastname" id="lastname" formControlName="lastname">
+      <div class="error-message" *ngIf="UserForm.get('lastname')?.hasError('required') && UserForm.get('lastname')?.touched">
+        Last Name is required.
+      </div>
+      <div class="error-message" *ngIf="UserForm.get('lastname')?.hasError('pattern') && UserForm.get('lastname')?.touched">
+        Last Name should contain only letters.
+      </div>
+      <br>
+ 
+  <label for="useremail"><b> Email Id : </b> </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="text" placeholder="Enter your Email" formControlName="useremail">
+  <div class="error-message" *ngIf="UserForm.get('useremail')?.hasError('required') && UserForm.get('useremail')?.touched">
+    Email is required.
+  </div>
+  <div *ngIf="UserForm.get('useremail')?.hasError('email') && UserForm.get('useremail')?.touched">
+    Invalid email format
+  </div>
+<br>
+  <label for="Mobile "><b> Phone : </b></label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="text" placeholder="Enter your Mobile number" formControlName="mobile">
+  <div *ngIf="UserForm.get('mobile')?.hasError('pattern') && UserForm.get('mobile')?.touched">
+    Invalid mobile number format
+  </div>
+ <br>
+     
+      <label for="psw"><b> Password : </b> </label>&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="password" placeholder="Enter Password" name="psw" id="psw" formControlName="password">
+      <div class="error-message" *ngIf="UserForm.get('password')?.hasError('required') && UserForm.get('password')?.touched">
+        Password is required.
+      </div>
+      <div class="error-message" *ngIf="UserForm.get('password')?.hasError('minlength') && UserForm.get('password')?.touched">
+        Password should be at least 8 characters.
+      </div>
+      <div class="error-message" *ngIf="UserForm.get('password')?.hasError('pattern') && UserForm.get('password')?.touched">
+        Password should contain at least one uppercase letter.
+      </div>
+      <div class="error-message" *ngIf="UserForm.get('password')?.hasError('pattern') && UserForm.get('password')?.touched">
+        Password should contain at least one special character.
+      </div>
+      <br>
+     
+      <!-- <button type="submit" class="registerbtn"  (click)='onSubmit()' >Register</button> -->
+      <button type="submit" class="registerbtn"  (click)='onSubmit()' >Register</button>
+      
+      <!-- <button disabled="{{track.isAdded}}" class="registerbtn">{{track.isAdded==true?'Added to Wishlist!':'Add to Wishlist'}} </button> -->
+
+
+    </div>
+ 
+    <div class="container signin">
+      <p>Already have an account? <a routerLink="/login">login</a>.</p>
+      <a routerLink="/home">Go Back to home</a>
+    </div>
+ 
+  </form>
+ 
+</body>
+ 
+</html>
+<app-footers></app-footers>
+ <!-- <label for="Mobile "><b> Phone : </b>
+      </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="text" placeholder=" Enter your Mobile number" name="mobile" id="MobileNo" [(ngModel)]="user.mobile">
+      <br> -->
+      <!-- <button type="submit" (click)='onSubmit()' class="registerbtn">Register</button> -->
+       <!-- <label for="useremail"><b> Email Id : </b> </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="text" placeholder="Enter your Email" name="useremail" id="useremail" [(ngModel)]="user.emailid">
+      <br> -->
+  <!-- <div *ngIf="email.validity.valueMissing && email.touched">
+        Email is required
+  </div>
+  <div *ngIf="Emailid.validity.typeMismatch && Emailid.touched">
+        Invalid email format
+  </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <form class="myform">
+
+    <div class="container">
+      <h1
+        style="color:black;font-weight:bold;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+        Spotify Music App</h1>
+      <h2 style="color:black;font-weight: bold;">Registration</h2>
+
+      <h3>Please fill the essentials</h3>
+      <label for="firstName"><b> FirstName : </b></label>&nbsp;&nbsp;&nbsp;
+      <input type="text" placeholder="Enter Your firstName" name="firstname" id="firstname"
+        [(ngModel)]="user.firstname">
+      <br>
+      <label for="lastname"><b> Lastname : </b> </label>&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="text" placeholder="Enter Your lastname" name="lastname" id="lastname" [(ngModel)]="user.lastname">
+      <br>
+      <label for="useremail"><b> Email Id : </b> </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="email" placeholder="Enter your Email" name="useremail" id="useremail" [(ngModel)]="user.useremail"
+        required>
+
+      <br>
+      <label for="psw"><b> Password : </b> </label>&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="password" placeholder="Enter Password" name="psw" id="psw" [(ngModel)]="user.password">
+      <br>
+      <label for="Mobile "><b> Phone : </b>
+      </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="text" placeholder=" Enter your Mobile number" name="mobile" id="MobileNo" [(ngModel)]="user.mobile">
+      <br>
+      <button type="submit" (click)='onSubmit()' class="registerbtn">Register</button>
+
+      <p>Already have an account? <a routerLink="/login">login in</a></p>
+      <a routerLink="/home">Go Back to home</a>
+
+    </div>
+  </form>
+
+</body>
+
+</html> -->

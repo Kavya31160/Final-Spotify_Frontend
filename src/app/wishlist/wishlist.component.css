@@ -1,0 +1,41 @@
+.body{
+  background-image: url('https://themepack.me/i/c/749x467/media/g/650/music-theme-bn7.jpg');
+  width: 100%;
+}
+
+
+.grid-container {
+    color:red;
+    display:inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px;
+        /* background-color: lightgrey; */
+        background-color: bisque;
+        
+
+  }
+  .tracks-container {
+    color: brown;
+  
+    text-align: center;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    /* background-color: lightgrey; */
+  }
+  .track {
+    border: 3px solid gray;
+    padding: 10px;
+    border-radius: 5px;
+    /* background-color: yellowgreen; */
+  }
+  .image{
+    height:180px;
+    width:260px;
+  }
+  .registerbtn{
+    background-color:red;
+    color: whitesmoke;
+  }

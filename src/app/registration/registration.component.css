@@ -1,0 +1,105 @@
+.body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:black;
+
+  } 
+  .myform{
+    /* background: url('https://img.freepik.com/free-photo/blue-painted-vinyl-arrangement-with-copy-space_23-2148785727.jpg?w=900&t=st=1703368557~exp=1703369157~hmac=7cf0630b1ff02a116d00c5c9c439431cd62cc67f76a0f28e1e151b18567d6097'); */
+    background: url('https://img.freepik.com/premium-photo/wireless-black-headphones-colorful-green-background_72464-459.jpg');
+   
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size:100% ;
+  } 
+  /* * {
+    box-sizing:border-box;  
+  } */
+  
+  /* Add padding to containers */
+  .container {
+    padding: 10px;
+    /* padding-left: 300px; */
+    text-align:center;
+    /* background-image:url('https://miro.medium.com/v2/resize:fit:2880/1*Nbu5breMttPwVRh-acBOlw.pnghttps://img.freepik.com/premium-photo/3d-background-spotify-icon_318923-140.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat; */
+    /* background-position: cover;
+    background-repeat: no-repeat;
+    background-size:100% ; */
+    padding-left: 340px; 
+    padding-top: 10px;
+    display:inline-block;
+    justify-content: center;
+    
+
+    color:black;
+    background-position:center;
+    
+  }
+  /* .grid{
+    
+      border: 1px solid #ccc;
+      padding: 2px;
+      border-radius: 5px;
+    
+  } */
+  
+  /* Full-width input fields */
+  input[type=text], input[type=password],input[type=email] {
+    width: 20%;
+    padding: 5px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border:black;
+    background:lightsteelblue;
+    border-radius: 10px;
+  }
+ 
+  
+  input[type=text]:focus, input[type=password]:focus,input[type=email]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Overwrite default styles of hr */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  /* Set a style for the submit button */
+  .registerbtn {
+    background-color:darkslateblue;
+    color: white;
+    padding:  5px;
+    margin: 10px 0px 0px 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 15%;
+    opacity: 0.9;
+    /* border-radius: 8px; */
+   
+  }
+  .error-message {
+    color: #ff0000;
+    font-size: 14px;
+    margin-top: 2px;
+  }
+  
+  .registerbtn:hover {
+    opacity:0.5;
+  }
+  
+ 
+  /* Add a blue text color to links */
+  a {
+    color: dodgerblue;
+  }
+  
+   /*Set a grey background color and center the text of the "sign in" section */
+  /* .signin {
+    background:steelblue;
+    text-align:center;
+  }
+
+  */
